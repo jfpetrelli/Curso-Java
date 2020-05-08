@@ -11,7 +11,6 @@ public class Variables{
 		
 		System.out.println(edad);
 		
-		System.out.println("HOLA");
 
 	}
 

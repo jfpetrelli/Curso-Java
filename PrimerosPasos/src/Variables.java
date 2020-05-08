@@ -10,6 +10,8 @@ public class Variables{
 		edad = 75;
 		
 		System.out.println(edad);
+		
+		System.out.println("HOLA");
 
 	}
 

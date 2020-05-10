@@ -17,12 +17,12 @@ public class Peso_Ideal {
 		
 		if(genero.equalsIgnoreCase("H")) {
 			
-		System.out.println("Su peso ideal es: "+(a-110));
+		System.out.println("Su peso ideal es: "+(a-110) + "kg");
 		
 		}
 		else if(genero.equalsIgnoreCase("M")) {
 			
-			System.out.println("Su peso ideal es: "+(a-120));
+			System.out.println("Su peso ideal es: "+(a-120) + "kg");
 			
 		}
 		

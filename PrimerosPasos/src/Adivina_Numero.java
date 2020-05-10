@@ -7,11 +7,11 @@ public class Adivina_Numero {
 		
 		Scanner entrada = new Scanner(System.in);
 		
-		int numero = 0;
-		
 		int intentos = 0;
 		
-		while(numero != aleatorio) {
+		int numero = 0;
+		
+		do{
 			
 			System.out.println("Introduce un numero por favor");
 			
@@ -29,7 +29,7 @@ public class Adivina_Numero {
 			
 			intentos++;
 			
-		}
+		}while(numero != aleatorio); 
 		
 		System.out.println("Correcto, numero de intentos: "+ intentos);
 

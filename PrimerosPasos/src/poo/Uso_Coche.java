@@ -1,16 +1,14 @@
 package poo;
-import javax.sound.sampled.AudioFileFormat.Type;
 import javax.swing.*;
 
 public class Uso_Coche {
 
 	public static void main(String[] args) {
 		
-		Coche miCoche = new Coche();
+	Coche miCoche = new Coche();
 
 	miCoche.establece_color(JOptionPane.showInputDialog("Ingrese color"));
-	String asiento = JOptionPane.showInputDialog("Asientos de cuero?");
-	miCoche.configura_asientos(asiento);
+	miCoche.configura_asientos(JOptionPane.showInputDialog("Asientos de cuero?"));
 	miCoche.configura_climatizador(JOptionPane.showInputDialog("Climatizador?"));
 	
 	

@@ -43,18 +43,20 @@ public class Coche {
 	
 	public void configura_asientos(String asientos_cuero) { //Set
 		
-		if(asientos_cuero=="si") {
-			
+		System.out.println(asientos_cuero);
+		System.out.println(((Object)asientos_cuero).getClass().getSimpleName());
+		
+		if(asientos_cuero=="si"){
 			this.asientos_cuero=true;
+			System.out.println("Entro");
 			}else {
 				this.asientos_cuero=false;
 			}
 			
 	}
 	
-	public String dime_asientos() { //Get
-		
-		if(asientos_cuero) {
+	public String dime_asientos() { //Get		
+		if(asientos_cuero==true) {
 			return "Tiene asientos de cuero";
 		}else {
 			return "No tiene asientos de cuero";
@@ -72,9 +74,9 @@ public class Coche {
 		
 	}
 	
-	public String dime_climatizador() {
+	public String dime_climatizador() { //Get
 		
-		if(climatizador) {
+		if(climatizador==true) {
 			return "Tiene climatizador";
 		}else {
 			return "No tiene climatizador";
@@ -82,6 +84,39 @@ public class Coche {
 		
 	}
 	
+	public String dime_peso_coche() { //Set and Get
+		
+		int peso_carroceria=500;
+		
+		peso_total = peso_plataforma + peso_carroceria;
+		
+		if(asientos_cuero) {
+			
+			peso_total = peso_total + 50;
+			
+		}if(climatizador) {
+			
+			peso_total = peso_total + 20;
+		}
+		
+		return "El peso del coche es " + peso_total;
+	}
+	
+	public int precio_coche() { //Get
+		
+		int precio_final = 10000;
+		if(asientos_cuero) {
+			
+			precio_final+=2000;
+		}
+		if(climatizador) {
+			
+			precio_final+=1500;
+		}
+		
+		return precio_final;
+		
+	}
 	
 }
 

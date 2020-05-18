@@ -47,7 +47,7 @@ public class Coche {
 		System.out.println(((Object)asientos_cuero).getClass().getSimpleName());
 		
 		
-		if(asientos_cuero.equals("si")){
+		if(asientos_cuero.equalsIgnoreCase("si")){
 			this.asientos_cuero=true;
 			System.out.println("Entro");
 			}else {
@@ -67,7 +67,7 @@ public class Coche {
 	
 	public void configura_climatizador(String climatizador) { //Set
 		
-		if(climatizador.equals("si")){
+		if(climatizador.equalsIgnoreCase("si")){
 			this.climatizador=true;
 		}else {
 			this.climatizador=false;

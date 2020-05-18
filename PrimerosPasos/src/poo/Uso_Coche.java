@@ -14,7 +14,7 @@ public class Uso_Coche {
 	
 	
 	 System.out.println(miCoche.dime_datos_generales() +" "+ miCoche.dime_color() +" "+ miCoche.dime_asientos()+" "+
-			 miCoche.dime_climatizador()+" "+ miCoche.dime_peso_coche()+" "+ miCoche.dime_peso_coche());
+			 miCoche.dime_climatizador()+" "+ miCoche.dime_peso_coche()+"\nEl precio es: "+ miCoche.precio_coche());
 	
 		
 	}

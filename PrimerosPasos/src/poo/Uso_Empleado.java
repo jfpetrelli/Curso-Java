@@ -21,6 +21,12 @@ public class Uso_Empleado {
 			System.out.println(e.getNombre() +" "+ e.getSueldo()+" "+e.getFecha()+"\n");
 			
 		}
+		
+		Jefe jefe = new Jefe("TOTTI", 70000,2010,1,1);
+		
+		jefe.setIncentivo(20000);
+		
+		System.out.print(jefe.getSueldo());
 			
 	}
 	
@@ -48,6 +54,12 @@ public class Uso_Empleado {
 			
 		}
 		
+		public Empleado(String nombre) {
+			
+			this.nombre=nombre;
+			
+		}
+		
 		public String getNombre(){
 		
 			return nombre;
@@ -70,5 +82,32 @@ public class Uso_Empleado {
 		
 	}
 	
-	
+	class Jefe extends Empleado{
 
+		private double incentivo;
+		
+		public Jefe(String nombre, double sueldo, int agno, int mes, int dia){
+			
+			super(nombre, sueldo, agno, mes, dia);
+		
+			
+		
+	}
+		
+		public void setIncentivo(double incentivo){
+			
+			this.incentivo = incentivo;
+			
+		}
+	
+		
+		public double getIncentivo() {
+				
+			return incentivo;
+		}
+	
+		public double getSueldo() {
+			
+			return (super.getSueldo()+incentivo);
+		}
+	}

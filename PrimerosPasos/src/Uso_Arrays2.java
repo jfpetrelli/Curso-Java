@@ -52,6 +52,7 @@ public class Uso_Arrays2 {
 		
 		for(int elemento:matriz_aleatoria) {
 			
+			
 			System.out.print(elemento + " ");
 		}
 		

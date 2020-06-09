@@ -76,6 +76,8 @@ public class Arrays_bidimencionales {
 		}
 		
 		
+		System.out.println("\n\n\n ////////////////////////////////////////////");
+		
 		for(int[]fila:m2) {
 			
 			System.out.println();
